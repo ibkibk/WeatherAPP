@@ -1,4 +1,6 @@
 .App {
+  background-image: url("./Image/stars-and-clouds-at-nighttime-1229042.jpg");
+  background-size: cover;
+  height: 100vh;
   text-align: center;
 }
-
