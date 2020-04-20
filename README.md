@@ -1,7 +1,5 @@
 ## WeatherApp
 
-This project is still in process.
-
 Api Doc: https://openweathermap.org/current Using the public OpenWeatherMap API, you need to build three cards displaying the current weather data for: City of London (city_id: 2643744) City of Bristol (city_id: 4749005) Rome (city_id: 4219762) The cards need to display: Temperature Humidity Minimum temperature at the moment Maximum temperature at the moment Default is Kelvin, but we love Celsius so can you change the measurement please.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
