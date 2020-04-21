@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "./CardList.module.scss";
 import Cards from "../Cards/Cards";
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export default class CardList extends Component {
   state = {
@@ -28,6 +29,7 @@ export default class CardList extends Component {
     console.log(this.state.threecities);
     return (
       <>
+        <div className={styles.top}>WEATHER APP</div>
         <section className={styles.card}>
           {this.state.threecities.map((city, index) => (
             <Cards city={city} key={index} />
