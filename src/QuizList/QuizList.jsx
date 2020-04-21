@@ -72,7 +72,7 @@ export default class QuizList extends Component {
       return (
         <div className={styles.result}>
           <h3>Game Over your Final score is {this.state.score} points </h3>
-          <p>
+          <p className={styles.parag}>
             The correct answer's for the questions was
             <ul>
               {quizData.map((item, index) => (

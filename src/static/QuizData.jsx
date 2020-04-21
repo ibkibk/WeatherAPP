@@ -1,9 +1,9 @@
 export const quizData = [
   {
     id: 0,
-    question: ` What is the Capital Of India ?`,
-    options: [`New Delhi`, `Mumbai`, `Kolkatta`],
-    answer: `New Delhi`,
+    question: ` What is the Capital Of UK ?`,
+    options: [`London`, `Istanbul`, `New York`],
+    answer: `London`,
   },
   {
     id: 1,
@@ -14,7 +14,7 @@ export const quizData = [
   {
     id: 3,
     question: `Name World's Richest Man?`,
-    options: [`Jeff Bezo`, `Bill Gates`, `Mark Zuckerberg`],
+    options: [`Jeff Bezo`, `Bill Gates`, `Ibrahim Kurhan`],
     answer: `Jeff Bezo`,
   },
   {
