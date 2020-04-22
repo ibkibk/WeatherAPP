@@ -8,7 +8,7 @@ export default class NavBar extends Component {
       <div className={style.top}>
         <NavItems route="home" name="WEATHER-APP" />
         <NavItems route="quiz" name="QUIZ-APP" />
-        <NavItems route="newestreleases" name="FOOTBALL " />
+        <NavItems route="football" name="FOOTBALL " />
       </div>
     );
   }
