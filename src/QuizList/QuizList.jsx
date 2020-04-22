@@ -71,8 +71,10 @@ export default class QuizList extends Component {
     if (isEnd) {
       return (
         <div className={styles.result}>
-          <h3>Game Over your Final score is {this.state.score} points </h3>
-          <p className={styles.parag}>
+          <h3 className={styles.A}>
+            Game Over<br></br> score:{this.state.score}{" "}
+          </h3>
+          <div className={styles.parag}>
             The correct answer's for the questions was
             <ul>
               {quizData.map((item, index) => (
@@ -81,7 +83,7 @@ export default class QuizList extends Component {
                 </li>
               ))}
             </ul>
-          </p>
+          </div>
         </div>
       );
     } else {

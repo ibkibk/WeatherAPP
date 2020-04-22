@@ -6,9 +6,9 @@ export default class NavBar extends Component {
   render() {
     return (
       <div className={style.top}>
-        <NavItems route="home" name="weatherApp" />
-        <NavItems route="quiz" name="quizApp" />
-        <NavItems route="newestreleases" name="football" />
+        <NavItems route="home" name="WeatherApp" />
+        <NavItems route="quiz" name="QuizApp" />
+        <NavItems route="newestreleases" name="Football " />
       </div>
     );
   }
