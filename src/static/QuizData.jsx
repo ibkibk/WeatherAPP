@@ -23,4 +23,10 @@ export const quizData = [
     options: [`River Nile`, `River Amazon`, `River Godavari`],
     answer: `River Nile`,
   },
+  {
+    id: 4,
+    question: `Which movie is HAL 9000 from?`,
+    options: [`Star Wars`, `Total Recall`, `A Space Odyssey`],
+    answer: `A Space Odyssey`,
+  },
 ];

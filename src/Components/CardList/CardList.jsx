@@ -29,7 +29,7 @@ export default class CardList extends Component {
     console.log(this.state.threecities);
     return (
       <>
-        <div className={styles.top}>WEATHER APP</div>
+        <div className={styles.top}>WEATHER-APP</div>
         <section className={styles.card}>
           {this.state.threecities.map((city, index) => (
             <Cards city={city} key={index} />

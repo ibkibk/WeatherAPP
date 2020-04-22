@@ -11,3 +11,8 @@
   font-size: 30px;
   margin-top: 50px;
 }
+@media screen and (max-width: 997px) {
+  .card {
+    display: grid;
+  }
+}
