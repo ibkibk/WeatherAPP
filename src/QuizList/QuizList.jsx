@@ -13,13 +13,10 @@ export default class QuizList extends Component {
   };
 
   loadQuizData = () => {
-    // console.log(quizData[0].question)
-    this.setState(() => {
-      return {
-        questions: quizData[this.state.currentQuestion].question,
-        answer: quizData[this.state.currentQuestion].answer,
-        options: quizData[this.state.currentQuestion].options,
-      };
+    this.setState({
+      questions: quizData[this.state.currentQuestion].question,
+      answer: quizData[this.state.currentQuestion].answer,
+      options: quizData[this.state.currentQuestion].options,
     });
   };
 
@@ -39,22 +36,19 @@ export default class QuizList extends Component {
     this.setState({
       currentQuestion: this.state.currentQuestion + 1,
     });
-    console.log(this.state.currentQuestion);
+    // console.log(this.state.currentQuestion);
   };
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate = (prevProps, prevState) => {
     if (this.state.currentQuestion !== prevState.currentQuestion) {
-      this.setState(() => {
-        return {
-          disabled: true,
-          questions: quizData[this.state.currentQuestion].question,
-          options: quizData[this.state.currentQuestion].options,
-          answer: quizData[this.state.currentQuestion].answer,
-        };
+      this.setState({
+        disabled: true,
+        questions: quizData[this.state.currentQuestion].question,
+        options: quizData[this.state.currentQuestion].options,
+        answer: quizData[this.state.currentQuestion].answer,
       });
     }
-  }
-  //check answer
+  };
   checkAnswer = (answer) => {
     this.setState({ myAnswer: answer, disabled: false });
   };
