@@ -1,0 +1,13 @@
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  border: solid white 2px;
+  width: 200px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.playersname {
+  color: white;
+}

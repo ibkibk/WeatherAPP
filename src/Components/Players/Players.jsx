@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-import style from "../Players/Players.module.scss";
+import styles from "../Players/Players.module.scss";
 
 export default class Players extends Component {
   render() {
     return (
-      <div className={style.team}>
-        <div className={style.goalKeeper}>Goalkeeper</div>
-        <div className={style.defender}>Defender</div>
-        <div className={style.midfield}>Midfielder</div>
-        <div className={style.attaker}>Attaker</div>
-      </div>
+      <React.Fragment>
+        <div
+          className={styles.maindiv}
+          onClick={() => this.props.handleClick(this.props.player)}
+        >
+          <div className={styles.playersname}>{this.props.player.name}</div>
+          <div className={styles.playersname}>{this.props.player.position}</div>
+        </div>
+      </React.Fragment>
     );
   }
 }

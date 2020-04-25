@@ -1,0 +1,41 @@
+.availablePlayers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.selectedTeam {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.selectedGoalkeeper {
+  // margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.selectedDefender {
+  // margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.selectedMidfielder {
+  // margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.selectedAttacker {
+  // margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  // flex-direction: column;
+  // justify-content: center;
+  // justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
