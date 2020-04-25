@@ -5,6 +5,8 @@ export default class Cards extends Component {
   render() {
     return (
       <div className={style.main}>
+        {/* <div className={style.top}>WEATHER-APP</div> */}
+
         <div className={style.box}>
           <h1>{this.props.city.name}</h1>
           <h2>{Math.round(this.props.city.main.temp)}°c</h2>

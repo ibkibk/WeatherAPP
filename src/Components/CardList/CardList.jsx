@@ -13,7 +13,7 @@ export default class CardList extends Component {
     threecities: [],
   };
 
-  componentDidMount() {
+  componentDidMount(e) {
     let string = "";
     this.state.cityName.forEach((city) => (string += `${city.city_id},`));
     fetch(

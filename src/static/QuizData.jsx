@@ -15,7 +15,7 @@ export const quizData = [
     id: 3,
     question: `Name World's Richest Man?`,
     options: [`Jeff Bezo`, `Bill Gates`, `Ibrahim Kurhan`],
-    answer: `Jeff Bezo`,
+    answer: `Ibrahim Kurhan`,
   },
   {
     id: 4,
