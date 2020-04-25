@@ -5,7 +5,6 @@ import styles from "../PlayerList/PlayerList.module.scss";
 
 export default class PlayerList extends Component {
   state = {
-    errorMsg: "",
     availablePlayers: playersData,
     selectedTeam: [],
     selectedGoalkeeper: 0,
@@ -116,50 +115,58 @@ export default class PlayerList extends Component {
       <React.Fragment>
         <div className={styles.container}>
           <section className={styles.availablePlayers}>
-            {this.state.availablePlayers.map((eachElement, index) => {
-              if (eachElement.position === "Goalkeeper") {
-                return (
-                  <Players
-                    key={index}
-                    player={eachElement}
-                    handleClick={this.handleClick}
-                  />
-                );
-              }
-            })}
-            {this.state.availablePlayers.map((eachElement, index) => {
-              if (eachElement.position === "Defender") {
-                return (
-                  <Players
-                    key={index}
-                    player={eachElement}
-                    handleClick={this.handleClick}
-                  />
-                );
-              }
-            })}
-            {this.state.availablePlayers.map((eachElement, index) => {
-              if (eachElement.position === "Midfielder") {
-                return (
-                  <Players
-                    key={index}
-                    player={eachElement}
-                    handleClick={this.handleClick}
-                  />
-                );
-              }
-            })}
-            {this.state.availablePlayers.map((eachElement, index) => {
-              if (eachElement.position === "Attacker") {
-                return (
-                  <Players
-                    key={index}
-                    player={eachElement}
-                    handleClick={this.handleClick}
-                  />
-                );
-              }
-            })}
+            <div className={styles.availableGoalkeeper}>
+              {this.state.availablePlayers.map((eachElement, index) => {
+                if (eachElement.position === "Goalkeeper") {
+                  return (
+                    <Players
+                      key={index}
+                      player={eachElement}
+                      handleClick={this.handleClick}
+                    />
+                  );
+                }
+              })}
+            </div>
+            <div className={styles.avaDef}>
+              {this.state.availablePlayers.map((eachElement, index) => {
+                if (eachElement.position === "Defender") {
+                  return (
+                    <Players
+                      key={index}
+                      player={eachElement}
+                      handleClick={this.handleClick}
+                    />
+                  );
+                }
+              })}
+            </div>
+            <div className={styles.avaMid}>
+              {this.state.availablePlayers.map((eachElement, index) => {
+                if (eachElement.position === "Midfielder") {
+                  return (
+                    <Players
+                      key={index}
+                      player={eachElement}
+                      handleClick={this.handleClick}
+                    />
+                  );
+                }
+              })}
+            </div>
+            <div className={styles.avaAttac}>
+              {this.state.availablePlayers.map((eachElement, index) => {
+                if (eachElement.position === "Attacker") {
+                  return (
+                    <Players
+                      key={index}
+                      player={eachElement}
+                      handleClick={this.handleClick}
+                    />
+                  );
+                }
+              })}
+            </div>
           </section>
           <section className={styles.selectedTeam}>
             <div className={styles.selectedGoalkeeper}>

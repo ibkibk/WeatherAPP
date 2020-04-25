@@ -2,12 +2,15 @@
   display: flex;
   flex-direction: column;
   border: solid white 2px;
-  width: 200px;
-  height: 80px;
+  // width: 180px;
+  height: 60px;
   align-items: center;
   justify-content: center;
 }
 
 .playersname {
   color: white;
+  font-size: 15px;
+  font-weight: bold;
+  width: 150px;
 }
