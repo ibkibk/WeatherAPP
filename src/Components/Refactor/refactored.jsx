@@ -1,5 +1,4 @@
 import { brandStore } from "./brandStore.mjs";
-
 import Color from "color";
 
 const defaultColors = [
@@ -18,10 +17,8 @@ const validateBodyFont = (bodyFont) => {
   allowedFonts.forEach((a) => {
     if (a === bodyFont.toLowerCase()) found = true;
   });
-  if (found) {
-    return bodyFont;
-  }
-  return defaultBodyFont;
+  if (found) bodyFont;
+  defaultBodyFont;
 };
 
 const buildTheme = (colors, bodyFont) => {
@@ -55,3 +52,7 @@ export const getBranding = (user) => {
   }
   return buildTheme(defaultColors, defaultBodyFont);
 };
+
+// COMMENT:
+// variables are not clear
+// diffucult to read
