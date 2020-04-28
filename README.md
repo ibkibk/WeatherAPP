@@ -1,6 +1,19 @@
 ## WeatherApp-QuizApp-FootballTeamApp
+This project includes 3 APPs:
+* Weather API
+* One Question Quiz
+* Football Team Organiser
 
+# WeatherApp
 Api Doc: https://openweathermap.org/current Using the public OpenWeatherMap API, you need to build three cards displaying the current weather data for: City of London (city_id: 2643744) City of Bristol (city_id: 4749005) Rome (city_id: 4219762) The cards need to display: Temperature Humidity Minimum temperature at the moment Maximum temperature at the moment Default is Kelvin, but we love Celsius so can you change the measurement please.
+
+# One Question Quiz
+Create a one question quiz that validates itself and checks the user input against the correct answer. Eg. pizza validates true when typed in an input
+
+# Football Team Organiser
+Using the data set provided, build a component to allow users to select players from the list and create their ideal Borussia Mönchengladbach starting eleven.
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
