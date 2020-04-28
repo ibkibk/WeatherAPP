@@ -55,29 +55,22 @@ export default class PlayerList extends Component {
     return false;
   };
 
-  adjustSelectedTeam = (player) => {
-    switch (player.position) {
-      case "Goalkeeper":
-        this.setState({
-          selectedGoalkeeper: this.state.selectedGoalkeeper - 1,
-        });
-        break;
-      case "Defender":
-        this.setState({
-          selectedDefender: this.state.selectedDefender - 1,
-        });
-        break;
-      case "Midfielder":
-        this.setState({
-          selectedMidfielder: this.state.selectedMidfielder - 1,
-        });
-        break;
-      case "Attacker":
-        this.setState({
-          selectedAttacker: this.state.selectedAttacker - 1,
-        });
-        break;
-    }
+  adjustSelectedTeam = () => {
+    this.setState({
+      selectedGoalkeeper: this.state.selectedGoalkeeper - 1,
+    });
+
+    this.setState({
+      selectedDefender: this.state.selectedDefender - 1,
+    });
+
+    this.setState({
+      selectedMidfielder: this.state.selectedMidfielder - 1,
+    });
+
+    this.setState({
+      selectedAttacker: this.state.selectedAttacker - 1,
+    });
   };
 
   handleClick = (player) => {
