@@ -17,7 +17,7 @@ export default class CardList extends Component {
     let string = "";
     this.state.cityName.forEach((city) => (string += `${city.city_id},`));
     fetch(
-      `https://api.openweathermap.org/data/2.5/group?id=${string}&units=metric&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/group?id=${string}&units=metric&appid=0f33f5c78acf44e7d38b5f6706f6f59d`
     )
       .then((response) => response.json())
 
@@ -26,6 +26,7 @@ export default class CardList extends Component {
       });
   }
   render() {
+    console.log(this.state.threecities);
     return (
       <>
         <div className={styles.top}>WEATHER-APP</div>
