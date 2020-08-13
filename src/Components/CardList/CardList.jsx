@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styles from "./CardList.module.scss";
 import Cards from "../Cards/Cards";
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-
+console.log(API_KEY);
 export default class CardList extends Component {
   state = {
     cityName: [

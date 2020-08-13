@@ -135,6 +135,7 @@ export default class PlayerList extends Component {
                 }
               })}
             </div>
+            <h1>team1</h1>
             <div className={styles.avaMid}>
               {this.state.availablePlayers.map((eachElement, index) => {
                 if (eachElement.position === "Midfielder") {
